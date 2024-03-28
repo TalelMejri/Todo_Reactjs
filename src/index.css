@@ -1,13 +1,69 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: "Reddit Mono", monospace;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  background-color: pink;
+
+}
+
+.Home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Home>h1 {
+  font-size: 3em;
+}
+
+.TodoForm>input {
+  outline: none;
+  border: none;
+  font-size: 1em;
+  padding: 1em 1.5em;
+  border-radius: 20px;
+}
+
+.TodoForm>button {
+  background-color: black;
+  color: #fff;
+  font-size: 1em;
+  outline: none;
+  border: none;
+  padding: 1em;
+  border-radius: 20px;
+  margin-left: 12px;
+}
+
+.TodoList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 2em;
+}
+
+.TodoList > div {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  padding: .7em 1em;
+  margin: 1em;
+  width: 100%;
+  max-width: 500px;
+  background-color: #000;
+  border-radius: 10px;
+}
+
+.TodoList>div>span {
+  position: absolute;
+  right: 1em;
+  cursor: pointer;
+  color: red;
 }
